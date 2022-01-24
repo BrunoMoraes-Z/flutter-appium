@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220124 11:26:37.999" rpa="false" schemaversion="2">
+<suite id="s1" name="Example" source="d:\Codes\flutter\appium_sample\tests\example.robot">
+<test id="s1-t1" name="Cenário 01: Abrir Calculadora">
+<kw name="Open App" library="keywords" type="SETUP">
+<kw name="Open Application" library="AppiumFlutterLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>automationName=Flutter</arg>
+<arg>deviceName=AutomationDevice</arg>
+<arg>udid=${DEVICE}</arg>
+<arg>app=${APK}</arg>
+<status status="PASS" starttime="20220124 11:26:38.176" endtime="20220124 11:26:47.001"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:38.175" endtime="20220124 11:26:47.002"/>
+</kw>
+<kw name="Dado que esteja com o aplicativo aberto" library="keywords">
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${elements.next}</arg>
+<status status="PASS" starttime="20220124 11:26:47.002" endtime="20220124 11:26:47.030"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:47.287" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:47.030" endtime="20220124 11:26:47.287"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:47.002" endtime="20220124 11:26:47.287"/>
+</kw>
+<kw name="Quando clico em &quot;Seguir&quot;" library="keywords">
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${elements.next}</arg>
+<msg timestamp="20220124 11:26:47.395" level="INFO" html="true">Clicking the element [btn_seguir]</msg>
+<status status="PASS" starttime="20220124 11:26:47.287" endtime="20220124 11:26:47.395"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:47.287" endtime="20220124 11:26:47.395"/>
+</kw>
+<kw name="Então deve ser possivel visualizar a calculadora" library="keywords">
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${elements.memory}</arg>
+<status status="PASS" starttime="20220124 11:26:47.396" endtime="20220124 11:26:47.935"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:48.219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:47.935" endtime="20220124 11:26:48.219"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:47.395" endtime="20220124 11:26:48.220"/>
+</kw>
+<kw name="Close Application" library="AppiumFlutterLibrary" type="TEARDOWN">
+<status status="PASS" starttime="20220124 11:26:48.220" endtime="20220124 11:26:48.672"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:38.175" endtime="20220124 11:26:48.672"/>
+</test>
+<test id="s1-t2" name="Cenário 02: Realizar uma operação">
+<kw name="Open App" library="keywords" type="SETUP">
+<kw name="Open Application" library="AppiumFlutterLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>automationName=Flutter</arg>
+<arg>deviceName=AutomationDevice</arg>
+<arg>udid=${DEVICE}</arg>
+<arg>app=${APK}</arg>
+<status status="PASS" starttime="20220124 11:26:48.673" endtime="20220124 11:26:57.481"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:48.673" endtime="20220124 11:26:57.481"/>
+</kw>
+<kw name="Dado que esteja na calculadora" library="keywords">
+<kw name="Dado que esteja com o aplicativo aberto" library="keywords">
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${elements.next}</arg>
+<status status="PASS" starttime="20220124 11:26:57.482" endtime="20220124 11:26:57.511"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:57.707" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:57.511" endtime="20220124 11:26:57.707"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:57.482" endtime="20220124 11:26:57.707"/>
+</kw>
+<kw name="Quando clico em &quot;Seguir&quot;" library="keywords">
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${elements.next}</arg>
+<msg timestamp="20220124 11:26:57.797" level="INFO" html="true">Clicking the element [btn_seguir]</msg>
+<status status="PASS" starttime="20220124 11:26:57.708" endtime="20220124 11:26:57.797"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:57.707" endtime="20220124 11:26:57.798"/>
+</kw>
+<kw name="Então deve ser possivel visualizar a calculadora" library="keywords">
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${elements.memory}</arg>
+<status status="PASS" starttime="20220124 11:26:57.798" endtime="20220124 11:26:58.366"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:58.622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:58.366" endtime="20220124 11:26:58.622"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:57.798" endtime="20220124 11:26:58.622"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:57.482" endtime="20220124 11:26:58.622"/>
+</kw>
+<kw name="E clico no botão &quot;1&quot;" library="keywords" sourcename="E clico no botão &quot;${KEY}&quot;">
+<if>
+<branch type="IF" condition="$KEY == '*'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.multiply}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.625" endtime="20220124 11:26:58.625"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.625" endtime="20220124 11:26:58.625"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '/'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.divide}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.625" endtime="20220124 11:26:58.626"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '+'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.plus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '-'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.minus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '='">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.equals}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.626"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>btn_${KEY}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220124 11:26:58.627" level="INFO">${loc} = btn_1</msg>
+<status status="PASS" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.627"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:58.626" endtime="20220124 11:26:58.627"/>
+</branch>
+<status status="PASS" starttime="20220124 11:26:58.623" endtime="20220124 11:26:58.627"/>
+</if>
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<status status="PASS" starttime="20220124 11:26:58.627" endtime="20220124 11:26:58.650"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<msg timestamp="20220124 11:26:58.692" level="INFO" html="true">Clicking the element [btn_1]</msg>
+<status status="PASS" starttime="20220124 11:26:58.650" endtime="20220124 11:26:58.692"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:58.978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:58.692" endtime="20220124 11:26:58.978"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:58.622" endtime="20220124 11:26:58.978"/>
+</kw>
+<kw name="E clico no botão &quot;2&quot;" library="keywords" sourcename="E clico no botão &quot;${KEY}&quot;">
+<if>
+<branch type="IF" condition="$KEY == '*'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.multiply}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.979" endtime="20220124 11:26:58.979"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.978" endtime="20220124 11:26:58.979"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '/'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.divide}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.979" endtime="20220124 11:26:58.979"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.979" endtime="20220124 11:26:58.979"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '+'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.plus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.979" endtime="20220124 11:26:58.979"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.979" endtime="20220124 11:26:58.980"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '-'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.minus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.980"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.980"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '='">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.equals}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.980"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.980"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>btn_${KEY}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220124 11:26:58.981" level="INFO">${loc} = btn_2</msg>
+<status status="PASS" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.981"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:58.980" endtime="20220124 11:26:58.981"/>
+</branch>
+<status status="PASS" starttime="20220124 11:26:58.978" endtime="20220124 11:26:58.981"/>
+</if>
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<status status="PASS" starttime="20220124 11:26:58.981" endtime="20220124 11:26:59.032"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<msg timestamp="20220124 11:26:59.073" level="INFO" html="true">Clicking the element [btn_2]</msg>
+<status status="PASS" starttime="20220124 11:26:59.032" endtime="20220124 11:26:59.073"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:59.330" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:59.073" endtime="20220124 11:26:59.331"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:58.978" endtime="20220124 11:26:59.331"/>
+</kw>
+<kw name="E clico no botão &quot;*&quot;" library="keywords" sourcename="E clico no botão &quot;${KEY}&quot;">
+<if>
+<branch type="IF" condition="$KEY == '*'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.multiply}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220124 11:26:59.332" level="INFO">${loc} = btn_times</msg>
+<status status="PASS" starttime="20220124 11:26:59.331" endtime="20220124 11:26:59.332"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:59.331" endtime="20220124 11:26:59.332"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '/'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.divide}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '+'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.plus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '-'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.minus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.332"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '='">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.equals}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.333"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.332" endtime="20220124 11:26:59.333"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>btn_${KEY}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.333" endtime="20220124 11:26:59.333"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.333" endtime="20220124 11:26:59.333"/>
+</branch>
+<status status="PASS" starttime="20220124 11:26:59.331" endtime="20220124 11:26:59.333"/>
+</if>
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<status status="PASS" starttime="20220124 11:26:59.333" endtime="20220124 11:26:59.404"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<msg timestamp="20220124 11:26:59.445" level="INFO" html="true">Clicking the element [btn_times]</msg>
+<status status="PASS" starttime="20220124 11:26:59.404" endtime="20220124 11:26:59.446"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:26:59.761" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:59.446" endtime="20220124 11:26:59.761"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:59.331" endtime="20220124 11:26:59.761"/>
+</kw>
+<kw name="E clico no botão &quot;3&quot;" library="keywords" sourcename="E clico no botão &quot;${KEY}&quot;">
+<if>
+<branch type="IF" condition="$KEY == '*'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.multiply}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.762"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.762"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '/'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.divide}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.762"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.762"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '+'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.plus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.763"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '-'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.minus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '='">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.equals}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>btn_${KEY}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220124 11:26:59.763" level="INFO">${loc} = btn_3</msg>
+<status status="PASS" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.763"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:59.763" endtime="20220124 11:26:59.764"/>
+</branch>
+<status status="PASS" starttime="20220124 11:26:59.762" endtime="20220124 11:26:59.764"/>
+</if>
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<status status="PASS" starttime="20220124 11:26:59.764" endtime="20220124 11:26:59.873"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<msg timestamp="20220124 11:26:59.966" level="INFO" html="true">Clicking the element [btn_3]</msg>
+<status status="PASS" starttime="20220124 11:26:59.873" endtime="20220124 11:26:59.966"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:27:00.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:26:59.966" endtime="20220124 11:27:00.243"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:59.762" endtime="20220124 11:27:00.244"/>
+</kw>
+<kw name="Quando clico no botão &quot;=&quot;" library="keywords" sourcename="Quando clico no botão &quot;${KEY}&quot;">
+<kw name="E clico no botão &quot;${KEY}&quot;" library="keywords" sourcename="E clico no botão &quot;${KEY}&quot;">
+<if>
+<branch type="IF" condition="$KEY == '*'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.multiply}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:27:00.244" endtime="20220124 11:27:00.244"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:27:00.244" endtime="20220124 11:27:00.244"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '/'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.divide}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '+'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.plus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '-'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.minus}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.245"/>
+</branch>
+<branch type="ELSE IF" condition="$KEY == '='">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>${elements.equals}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220124 11:27:00.246" level="INFO">${loc} = btn_equals</msg>
+<status status="PASS" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.246"/>
+</kw>
+<status status="PASS" starttime="20220124 11:27:00.245" endtime="20220124 11:27:00.246"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${loc}</var>
+<arg>btn_${KEY}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220124 11:27:00.246" endtime="20220124 11:27:00.246"/>
+</kw>
+<status status="NOT RUN" starttime="20220124 11:27:00.246" endtime="20220124 11:27:00.246"/>
+</branch>
+<status status="PASS" starttime="20220124 11:27:00.244" endtime="20220124 11:27:00.246"/>
+</if>
+<kw name="Wait For Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<status status="PASS" starttime="20220124 11:27:00.246" endtime="20220124 11:27:00.320"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${loc}</arg>
+<msg timestamp="20220124 11:27:00.337" level="INFO" html="true">Clicking the element [btn_equals]</msg>
+<status status="PASS" starttime="20220124 11:27:00.320" endtime="20220124 11:27:00.337"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:27:00.688" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-9.png"&gt;&lt;img src="appium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:27:00.337" endtime="20220124 11:27:00.688"/>
+</kw>
+<status status="PASS" starttime="20220124 11:27:00.244" endtime="20220124 11:27:00.688"/>
+</kw>
+<status status="PASS" starttime="20220124 11:27:00.244" endtime="20220124 11:27:00.688"/>
+</kw>
+<kw name="Entao o resultado deve ser &quot;36.0&quot;" library="keywords" sourcename="Entao o resultado deve ser &quot;${EXPECTED}&quot;">
+<kw name="Get Text" library="AppiumFlutterLibrary">
+<var>${TEXT}</var>
+<arg>${elements.screen}</arg>
+<msg timestamp="20220124 11:27:00.748" level="INFO">${TEXT} = 36.0</msg>
+<status status="PASS" starttime="20220124 11:27:00.689" endtime="20220124 11:27:00.748"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumFlutterLibrary">
+<msg timestamp="20220124 11:27:01.012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-10.png"&gt;&lt;img src="appium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 11:27:00.748" endtime="20220124 11:27:01.012"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>$EXPECTED == $TEXT</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220124 11:27:01.012" endtime="20220124 11:27:01.012"/>
+</kw>
+<status status="PASS" starttime="20220124 11:27:00.688" endtime="20220124 11:27:01.013"/>
+</kw>
+<kw name="Close Application" library="AppiumFlutterLibrary" type="TEARDOWN">
+<status status="PASS" starttime="20220124 11:27:01.013" endtime="20220124 11:27:01.384"/>
+</kw>
+<status status="PASS" starttime="20220124 11:26:48.672" endtime="20220124 11:27:01.384"/>
+</test>
+<status status="PASS" starttime="20220124 11:26:38.000" endtime="20220124 11:27:01.385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Example">Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
